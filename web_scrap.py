@@ -3,8 +3,8 @@ from bs4 import BeautifulSoup as Soup
 import pandas as pd 
 import datetime 
 
-#Read the NYSE market holiday calendars
-
+# Read the NYSE market holiday calendars
+# Added additional comment
 source = requests.get('https://www.nyse.com/markets/hours-calendars').text 
 soup = Soup(source,'html5lib')
 
