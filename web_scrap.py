@@ -4,6 +4,7 @@ import pandas as pd
 import datetime 
 
 #Read the NYSE market holiday calendars
+
 source = requests.get('https://www.nyse.com/markets/hours-calendars').text 
 soup = Soup(source,'html5lib')
 
